@@ -56,14 +56,13 @@ body {
     width: 100%;
 }
 .header-img {
-    right: 200px;
-    margin: 10px 0;
+    width: 250px;
 }
 .header-menu {
     margin-right: 30px;
 }
 .header-menu ul {
-    display: none;
+    /*display: none;*/
     list-style: none;
     margin: 0 0 0 -14px;
     padding: 0;
