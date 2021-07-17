@@ -5,7 +5,7 @@ body {
     font-family: 'Roboto', sans-serif;
     height: 593px;
 }
-/*Iniciar Sesion html */
+/*Index html */
 .header-iniciarSesion {
     width: 100%;
     height: 80px;
@@ -46,7 +46,7 @@ body {
     height: 45px;
 }
 
-/*Index html */
+/*Perfil html */
 .header {
     background-color: #0093E9;
     width: 100%;
@@ -60,6 +60,7 @@ body {
     margin-top: 10px;
     margin-left: 10px;
 }
+/*menu y icono de perfil*/
 .header-menu {
     margin-right: 30px;
 }
@@ -99,3 +100,32 @@ body {
     margin: 0px;
     color: white;
   }
+/*buscador*/
+.main {
+    height: 300px;
+    margin-top: 50px;
+}
+
+.main-title {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+
+.input {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid white;
+    border-radius: 28px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    height: 50px;
+    padding: 0px 20px;
+    width: 70%;
+    outline: none;
+    margin-left: 13%;
+}
+
+::placeholder {
+    color: white;
+}
