@@ -122,6 +122,7 @@ body {
     text-align: center;
 }
 .footer-a {
+    font-family: 'Roboto', sans-serif;
     margin: 5px;
 }
 /*Register html*/
@@ -170,6 +171,7 @@ body {
     text-align: center;
 }
 .footer-register{
+    font-family: 'Roboto', sans-serif;
     margin: 5px;
 }
 /*Perfil html */
