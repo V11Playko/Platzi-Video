@@ -4,6 +4,53 @@ body {
     font-family: 'Roboto', sans-serif;
     height: 500px;
 }
+/* *** MEDIA QUERIES START*** */
+@media only screen and (max-width: 600px) {
+.header{
+    justify-content: center;
+}
+.header-iniciarSesion {
+    justify-content: center;
+}   
+.login{
+    margin-top: -2px;
+    margin-left: 170px;
+}
+.login-container{
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    width: 100%;
+}
+.login-container--form {
+    align-items: center;
+}
+.login-container--remember-me{
+    align-items: center;
+}    
+.login-container--remember-me label {
+    display: flex;
+    align-items: center;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 21px 20px 20px;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    }   
+}
+.footer-a {
+    margin-left: 100px;
+}
+.footer-register {
+    margin-left: 100px;
+}
+/* *** MEDIA QUERIES END*** */
+
+
 /*Index html */
 .header-iniciarSesion {
     width: 100%;
@@ -116,7 +163,7 @@ body {
     font-size: 14px;
     margin-bottom: 10px;
 }
-.footer-iniciarSesion {
+.footer {
     margin: 10px 70px 10px 10px;
     align-items: center;
     text-align: center;
@@ -165,7 +212,7 @@ body {
     margin-right: 15px;
     margin-left: -16px;
 }
-.footer-m-register{
+.footer{
     margin: 10px 255px 10px 10px;
     align-items: center;
     text-align: center;
@@ -261,6 +308,9 @@ body {
 }
 /*Carrusel de videos*/
 
+.categories__title{
+    color: white;
+}
 
 /*1.- Width del 100% para que abarque toda la pantalla.
       2.- Con overflow establecemos la propiedad de scroll
