@@ -29,20 +29,29 @@
     </header>
     <section class="login">
         <section class="login__container">
-            <h2>Crear cuenta</h2>
+            <h2>Inicia sesion</h2>
             <form class="login__form">
-                
                 <input type="text" class="input" placeholder="Correo">
-                <input type="text" class="input" placeholder="Nombre">
-                <input type="text" class="input" placeholder="Teléfono">
                 <input type="password" class="input" placeholder="Contraseña">
-                <button class="button"><a href="meme.html">Crear cuenta</a></button>
-                         
+                <button class="button"><a href="index.html">Iniciar sesión</a></button>
+                <div class="login__container--remember-me">
+                    <label >
+                        <input type="checkbox" id="caja1" value="checkbox">Recuerdame
+                    </label>    
+                    <a href="reto.html">Olvide mi contraseña</a>            
+                </div>                
             </form>
-            
-                
-
-            <p class="login__container--register"><a href="login.html">Ya tienes cuenta Inicia sesión</a></p>
+            <section class="login_container--social-media">
+                <div>
+                    <a href="https://accounts.google.com/ServiceLogin/identifier?elo=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank"><img src="./assets/img/google-logo.png" alt="Google" width="30"></a>
+                    <label>Inicia sesion con Google</label>
+                </div>  
+                <div>
+                    <a href="https://twitter.com/login" target="_blank"><img src="./assets/img/twitter-logo.png" alt="Twitter" width="30"></a>
+                    <label>Inicia sesion con Twitter</label>
+                </div>  
+            </section>
+            <p class="login__container--register">No tienes ninguna cuenta <a href="register.html">Regístrate</a></p>
         </section>
     </section>
     <footer class="footer">
@@ -51,4 +60,4 @@
         <a href="no-tengo.html">Centro de ayuda</a>
     </footer>
 </body>
-</html> 
+</html>

@@ -1,57 +1,142 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible"content="IE=edge" />
-    <meta name="viewport"content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="./assets/img/favicon.png">
-    <title>Platzi Video</title>
-  </head>
-  <script>
-    function myFunction(){
-        alert("Advertencia: Estas saliendo de la pagina")
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/carousel.css">
+</head>
+<style>
+    body{
+        margin: 0px;
+        background-color: #191788;
+        font-family: 'Muli', sans-serif;
+        
     }
-  </script>
-  <body>
-    <header class="header-iniciarSesion">
-        <img src="./assets/img/logo-platzi.png" alt="Logo de la pagina" class="img-iniciarSesion">
-        <div class="contenedor">
-          <ul class="list-ul-iniciarSesion">
-              <li class="list-li-IniciarSesion"><a href="https://twitter.com/HeinnerVega11" class="a-iniciarSesion" target="_blank" onclick="myFunction()">Contacto</a></li>
-              <li class="list-li-IniciarSesion">Acerca de</li>
-              <li class="list-li-IniciarSesion">Perfil</li>
-          </ul>
-        </div>
-    </header>
+</style>
+<body>
 
-    <section class="login">
-      <div class="login-container">
-          <h2 class="h2-titulo">Inicia Sesión</h2>
-          <form class="login-container--form">
-              <input class="input-plaza" type="text" placeholder="Correo">
-              <input class="input-plaza" type="password" placeholder="Contraseña">
-              <button class="button"><a href="perfil.html">Iniciar seción</a></button>
-              <div class="login-container--remember-me">
-                  <label>
-                      <input type="checkbox" id="cbox1" value="checkbox">Recuérdame
-                  </label>
-                  <a href="/">Olvidé mi contraseña</a>
-              </div>
-          </form>
-          <div class="login-container--social-media">
-              <div><a class="login-container--social" href="https://accounts.google.com/ServiceLogin/identifier?elo=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank"><img class="index-logo-img" src="./assets/img/google-logo.png" alt="">Inicia seción con Google</a></div>
-              <div><a class="login-container--social" href="https://twitter.com/login" target="_blank"><img class="index-logo-img" src="./assets/img/twitter-logo.png" alt="">Inicia seción con Twitter</a></div>
-          </div>
-          <p class="login-container--register">No tienes ninguna cuenta <a href="register.html">Registrate</a><p>
-      </div>
-  </section>
-  <footer class="footer">
-      <a class="footer-a" href="/">Términos de uso</a>
-      <a class="footer-a" href="/">Declaración de privacidad</a>
-      <a class="footer-a" href="/">Centro de ayuda</a>
-  </footer>
+    <div class="container">
+
+        <header class="header">
+            <a href="login.html"><img class="header__img" src="./assets/img/logo-platzi.png"/></a>
+            <div class="header__menu">
+                <div class="header__menu--profile">
+                    <img src="./assets/img/icon-menu.png" alt="User" width="50" >
+                    <p>Perfil</p>
+                </div>
+                <ul>
+                    <li><a href="meme.html">Cuenta</a</li>
+                    <li><a href="login.html">Cerrar Sesion</a></li>
+                </ul>
+            </div>
+        </header>
+
+
+        <section class="main">
+            <h2 class="main__title">Que quieres ver hoy?</h2>
+            <input class="input" type="text" placeholder="Buscar...">
+        </section>
+
+        <section class="carousel">
+            <div class="carousel_container">
+                <div class="carousel-item">
+                    <img src="./assets/portadas/portada-2.jpg" alt="People" class="carousel-item__img">
+                    <div class="carousel-item__details">
+                        <div>
+                            <img src="./assets/img/icon-play.png" width="30" alt="Play">
+                            <img src="./assets/img/icon-plus.png" width="30" alt="Plus">
+                        </div>
+                        <p class="carousel-item__details--title">Titulo descriptivo</p>
+                        <p class="carousel-item__details--subtitle">2019 16+ 114</p>
+                    </div>                
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/portadas/portada-6.jpg" alt="People" class="carousel-item__img">
+                    <div class="carousel-item__details">
+                        <div>
+                            <img src="./assets/img/icon-play.png" width="30" alt="Play">
+                            <img src="./assets/img/icon-plus.png" width="30" alt="Plus">
+                        </div>
+                        <p class="carousel-item__details--title">Titulo descriptivo</p>
+                        <p class="carousel-item__details--subtitle">2019 16+ 114</p>
+                    </div>                
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/portadas/portada-7.jpg" alt="People" class="carousel-item__img">
+                    <div class="carousel-item__details">
+                        <div>
+                            <img src="./assets/img/icon-play.png" width="30" alt="Play">
+                            <img src="./assets/img/icon-plus.png" width="30" alt="Plus">
+                        </div>
+                        <p class="carousel-item__details--title">Titulo descriptivo</p>
+                        <p class="carousel-item__details--subtitle">2019 16+ 114</p>
+                    </div>                
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/portadas/portada-8.jpg" alt="People" class="carousel-item__img">
+                    <div class="carousel-item__details">
+                        <div>
+                            <img src="./assets/img/icon-play.png" width="30" alt="Play">
+                            <img src="./assets/img/icon-plus.png" width="30" alt="Plus">
+                        </div>
+                        <p class="carousel-item__details--title">Titulo descriptivo</p>
+                        <p class="carousel-item__details--subtitle">2019 16+ 114</p>
+                    </div>                
+                </div>
+                <div class="carousel-item">
+                    <img src="/assets/portadas/portada-1.jpg" alt="People" class="carousel-item__img">
+                    <div class="carousel-item__details">
+                        <div>
+                            <img src="./assets/img/icon-play.png" width="30" alt="Play">
+                            <img src="./assets/img/icon-plus.png" width="30" alt="Plus">
+                        </div>
+                        <p class="carousel-item__details--title">Titulo descriptivo</p>
+                        <p class="carousel-item__details--subtitle">2019 16+ 114</p>
+                    </div>                
+                </div>
+                <div class="carousel-item">
+                    <img src="/assets/portadas/portada-3.jpg" alt="People" class="carousel-item__img">
+                    <div class="carousel-item__details">
+                        <div>
+                            <img src="./assets/img/icon-play.png" width="30" alt="Play">
+                            <img src="./assets/img/icon-plus.png" width="30" alt="Plus">
+                        </div>
+                        <p class="carousel-item__details--title">Titulo descriptivo</p>
+                        <p class="carousel-item__details--subtitle">2019 16+ 114</p>
+                    </div>                
+                </div>
+                <div class="carousel-item">
+                    <img src="/assets/portadas/portada-4.jpg" alt="People" class="carousel-item__img">
+                    <div class="carousel-item__details">
+                        <div>
+                            <img src="./assets/img/icon-play.png" width="30" alt="Play">
+                            <img src="./assets/img/icon-plus.png" width="30" alt="Plus">
+                        </div>
+                        <p class="carousel-item__details--title">Titulo descriptivo</p>
+                        <p class="carousel-item__details--subtitle">2019 16+ 114</p>
+                    </div>                
+                </div>
+                <div class="carousel-item">
+                    <img src="/assets/portadas/portada-5.jpg" alt="People" class="carousel-item__img">
+                    <div class="carousel-item__details">
+                        <div>
+                            <img src="./assets/img/icon-play.png" width="30" alt="Play">
+                            <img src="./assets/img/icon-plus.png" width="30" alt="Plus">
+                        </div>
+                        <p class="carousel-item__details--title">Titulo descriptivo</p>
+                        <p class="carousel-item__details--subtitle">2019 16+ 114</p>
+                    </div>                
+                </div>
+            </div>
+        </section>
+
+    </div>
     
-  </body>
+</body>
 </html>
